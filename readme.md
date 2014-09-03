@@ -70,3 +70,9 @@ Responsive table by Zurb changes
 We made two small changes to trigger the "mobile view" earlier. In our css, we changed the media query to trigger at 1780px instead of its default, and we changed the same value in responsive-tables.js as well.
 
 Prep Football '13 used crosstablejs, which was replaced with Responsive table by Zurb due to it being, well, non-responsive.
+
+Issues
+==============
+
+* The dropdown modal by Foundation is broken as dynamicpage.js does not re-fire it correctly. 
+* Skrollr does not work properly on iOS. iOS emulation works fine, Android works fine. Using some workarounds to show mobile-specific elements instead.
