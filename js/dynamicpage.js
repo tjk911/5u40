@@ -18,13 +18,6 @@ $(function() {
         return false;
     });
 
-    $('figure').delegate('a', 'click', function() {
-        _link = $(this).attr('href');
-        history.pushState(null, null, _link);
-        loadContent(_link);
-        return false;
-    });
-
     $('ul').delegate('a', 'click', function() {
         _link = $(this).attr('href');
         history.pushState(null, null, _link);
