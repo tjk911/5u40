@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5 Under 40<?php echo htmlspecialchars($title);?></title>
+    <title>Times' 5 Under 40<?php echo htmlspecialchars($title);?></title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/custom.min.css" />
@@ -72,6 +72,6 @@
 	  </nav>
 	</div>
 
-	<section id="main-content">
+	<section id="main-content" style="padding-top:60px;">
 	<div id="guts">
 		<iframe scrolling="no" height="1" width="1" frameborder="0" src="omniture.php?pagetitle=<?php echo $title; ?>" style="position:absolute;left:-5000px;"></iframe>
