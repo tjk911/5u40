@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prep Football '14<?php echo htmlspecialchars($title);?></title>
+    <title>5 Under 40<?php echo htmlspecialchars($title);?></title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/custom.min.css" />
@@ -20,7 +20,7 @@
 	        <h1><a href="http://www.sctimes.com">SCTimes</a></h1>
 	      </li>
 	      <li class="name show-for-small">
-	        <h1><a href="http://www.sctimesapps.com/projects/prepfootball14/">High School Football '14</a></h1>
+	        <h1><a href="http://www.sctimesapps.com/projects/5under40/">5 Under 40</a></h1>
 	      </li>
 	       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 	      <li class="toggle-topbar menu-icon"><a href="javascript:void(0)"><span></span></a></li>
@@ -29,38 +29,38 @@
 	    <section class="top-bar-section">
 	    	<!-- Left Nav Section -->
 	    	<ul class="left hide-for-small">
-	    	  <li><a href="http://www.sctimesapps.com/projects/prepfootball14/">High School Football '14</a></li>
+	    	  <li><a href="http://www.sctimesapps.com/projects/5under40/">5 Under 40</a></li>
 	    	</ul>
 	      <!-- Right Nav Section -->
 	      <ul class="right">
-	        <li><a href="page.php?page=cover">Cover Story</a></li>
+	        <!-- <li><a href="page.php?page=cover">Cover Story</a></li> -->
 	        <li class="has-dropdown">
-	          	<a href="javascript:void(0)">Teams & Conferences</a>
+	          	<a href="javascript:void(0)">Recipients</a>
 	          	<ul class="dropdown">
 				  <?php
-				  $file = fopen("teamindex.txt", "r");
+				  $file = fopen("recipients.txt", "r");
 					//Output a line of the file until the end is reached
-					$currentconf = "";
-					$firstconf = true;
+					$currentyear = "";
+					$firstyear = true;
 					while(! feof($file))
 					{
 						$readarr = fgets($file);
 						$readarr = explode('|',$readarr);
 						$conf = $readarr[0];
-						$schoolname = $readarr[1];
+						$recipientname = $readarr[1];
 						$pageurl = $readarr[2];
 						
-						if (($firstconf != true) && ($currentconf != $conf)) {
+						if (($firstyear != true) && ($currentyear != $conf)) {
 								echo "</ul></li>";
 						}
-						if ($currentconf != $conf) {
+						if ($currentyear != $conf) {
 								echo "<li class='has-dropdown'>";
 								echo "<a href='javascript:void(0)'>".$conf."</a>";
 								echo "<ul class='dropdown'>";
-								$currentconf = $conf;
-								$firstconf = false;
+								$currentyear = $conf;
+								$firstyear = false;
 						}
-						echo "<li><a href='page.php?page=".$pageurl."'>".$schoolname."</a></li>";	
+						echo "<li><a href='page.php?page=".$pageurl."'>".$recipientname."</a></li>";	
 					}
 					echo "</ul></li>";
 					fclose($file);			  
