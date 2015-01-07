@@ -2,7 +2,9 @@
   <div class="row" style="margin-top:0px !important; padding-top:0px !important;">
     <h1>2015 Times Media 5 Under 40 Award recipients</h1>
     <div class="large-2 push-1 columns">
-      <img src="http://www.placecage.com/400/400">
+      <div>
+        <img class="kai" src="http://www.placecage.com/400/400">
+      </div>
     </div>
     <div class="large-2 push-1 columns">
       <img src="http://www.placecage.com/400/400">
