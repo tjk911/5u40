@@ -1,9 +1,52 @@
 <?php include('header.php'); ?>
   <div class="row" style="margin-top:0px !important; padding-top:0px !important;">
-    <h1>2015 Times Media 5 Under 40 Award recipients</h1>
-    <div class="large-2 push-1 columns">
+    <div class="content">
+      <h2>2015 Times Media 5 Under 40 Award recipients</h2>
+      <div class="grid">
+        <figure class="effect-steve">
+          <img src="http://www.placecage.com/400/400" alt="img29"/>
+          <figcaption>
+            <h2 class="h2mod">Person 1</h2>
+            <p>Steve was afraid of the Boogieman.</p>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+        <figure class="effect-steve">
+          <img src="http://www.placecage.com/400/400" alt="img29"/>
+          <figcaption>
+            <h2 class="h2mod">Person 2</h2>
+            <p>Kai was afraid of the Weeping Angels.</p>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure><figure class="effect-steve">
+          <img src="http://www.placecage.com/400/400" alt="img29"/>
+          <figcaption>
+            <h2 class="h2mod">Person 3</h2>
+            <p>Steve was afraid of the Boogieman.</p>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+        <figure class="effect-steve">
+          <img src="http://www.placecage.com/400/400" alt="img29"/>
+          <figcaption>
+            <h2 class="h2mod">Person 4</h2>
+            <p>Steve was afraid of the Boogieman.</p>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure><figure class="effect-steve">
+          <img src="http://www.placecage.com/400/400" alt="img29"/>
+          <figcaption>
+            <h2 class="h2mod">Person 5</h2>
+            <p>Steve was afraid of the Boogieman.</p>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+      </div>
+    </div>
+    <!-- <h1>2015 Times Media 5 Under 40 Award recipients</h1>
+    <div class="large-2 push-1 columns kai">
       <div>
-        <img class="kai" src="http://www.placecage.com/400/400">
+        <img src="http://www.placecage.com/400/400">
       </div>
     </div>
     <div class="large-2 push-1 columns">
@@ -17,7 +60,7 @@
     </div>
     <div class="large-2 pull-1 columns">
       <img src="http://www.placecage.com/400/400">
-    </div>
+    </div> -->
   </div>
 <!--   <div class="row" style="margin-top:0px !important; padding-top:0px !important;">
 
