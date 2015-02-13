@@ -19,12 +19,12 @@ Responsive tables code from Zurb with tweaks for different breakpoints.
 To-do
 ==============
 
-* ~Cleanup additional stuff from Prep football that's useless for 5u40~
+* ~~Cleanup additional stuff from Prep football that's useless for 5u40~~
 * Cleanup and optimize code - heavy load on the page, CSS could do with additional cleaning
 * Templating pages more
 * Tweaking styling - a great deal of Foundation's basic stylings still remain
 * Adapting project over to rdpapp
-* Work on the ad code a little more - somewhat haphazard implementation right now
+* ~~Work on the ad code a little more - somewhat haphazard implementation right now~~
 
 Contributors
 ==============
