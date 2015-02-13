@@ -1,0 +1,130 @@
+body {
+color: #000000;
+}
+
+a {
+color: #003366;
+}
+
+a:hover {
+color:#008cba;
+}
+
+.top-bar {
+background: #000000;
+}
+
+.top-bar.expanded .title-area {  
+background: #000000;
+}
+
+.title-area {
+background: #000000;
+}
+
+
+.top-bar-section li a:not(.button) {
+background: #000000;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+background: #000000;
+}
+
+.footer {
+margin-top: 10px;
+color: #ffffff;
+}
+
+.footer  a{
+color: #ffffff;
+}
+
+
+.electiontable td{
+color: #ffffff !important;
+}
+
+.electionsecondary {
+background-color: #84a7ba !important;
+}
+
+.electionsecondary td{
+color: #ffffff !important;
+}
+
+.detailrow {
+background-color: #a44445 !important;
+}
+
+.detailrow td{
+color: #ffffff !important;
+}
+
+.reveal-modal {
+top: 20px !important;
+}
+.tabs dd > a, .tabs .tab-title > a {
+padding: .5em;
+line-height: 130%;
+}
+
+.tabs-content > .content {
+padding: 0;
+}
+
+table {
+margin-bottom: 0;
+width:100%;
+border-collapse: collapse;
+}
+
+.alright {
+text-align:right;
+}
+
+.electioncell a {
+color: #6EB6FF;
+text-decoration: underline;
+}
+
+.detailrow a {
+color: #6EB6FF;
+text-decoration: underline;
+}
+
+.tabs dd.active a, .tabs .tab-title.active a {
+background-color: #1d3e73;
+color: #ffffff;
+}
+
+#mainlogo {
+width:156px;
+}
+
+table tr {
+background-color:#ffffff !important;
+}
+
+.sportname {
+background-color:#000000 !important;
+color: #ffffff !important;
+}
+
+.columns {
+margin-top: 10px;
+}
+
+.fullrow {
+max-width:100%;
+text-align: center;
+}
+
+.adspot {
+padding-left:0;
+padding-right:0;
+}
+
+#headerlogo {
+width:100%;
+}

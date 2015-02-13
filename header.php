@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Times' 5 Under 40<?php echo htmlspecialchars($title);?></title>
+    <title>Times' <?php echo htmlspecialchars($title);?></title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/grid.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -47,21 +47,27 @@
 					{
 						$readarr = fgets($file);
 						$readarr = explode('|',$readarr);
-						$conf = $readarr[0];
+						$year = $readarr[0];
 						$recipientname = $readarr[1];
 						$pageurl = $readarr[2];
 						
-						if (($firstyear != true) && ($currentyear != $conf)) {
+						if (($firstyear != true) && ($currentyear != $year)) {
 								echo "</ul></li>";
 						}
-						if ($currentyear != $conf) {
+						if ($currentyear != $year) {
 								echo "<li class='has-dropdown'>";
-								echo "<a href='javascript:void(0)'>".$conf."</a>";
+								echo "<a href='javascript:void(0)'>".$year."</a>";
 								echo "<ul class='dropdown'>";
-								$currentyear = $conf;
+								$currentyear = $year;
 								$firstyear = false;
 						}
-						echo "<li><a href='page.php?page=".$pageurl."'>".$recipientname."</a></li>";	
+
+						if ($year > 2012) {
+						  echo "<li><a href='page.php?page=".$pageurl."'>".$recipientname."</a></li>";
+						} else {
+						  echo "<li><a href='javascript:void(0)'>".$recipientname."</a></li>";
+						}
+						// echo "<li><a href='page.php?page=".$pageurl."'>".$recipientname."</a></li>";	
 					}
 					echo "</ul></li>";
 					fclose($file);			  
